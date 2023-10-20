@@ -76,7 +76,7 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
       else if(item == 2){
         window.open('https://admin.mytutorroom.com/page/tutor-jobs'); 
        }
-       else{
+      else{
         navigate(`${item}`)
        }
         

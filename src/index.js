@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import AdelContextWrapper from './store/Context';
+import { ThemeProvider } from '@mui/material';
+import { theme } from './theme';
+import { MAIN_COLOR, SECONDARY_COLOR } from './constant';
+import './index.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+   
+    <ThemeProvider theme={theme}>
+      <AdelContextWrapper>
+        <App />
+      </AdelContextWrapper>
+    </ThemeProvider>
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

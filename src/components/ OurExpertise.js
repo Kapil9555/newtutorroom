@@ -22,14 +22,14 @@ const OurExpertise = () => {
     const navigate = useNavigate()
     const { state } = useContext(AdelContext)
     const services = [
-        { title: '1:1 Live Tutoring', icon: wordpress, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Group Tutoring',  icon: python, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: '  k-12 Academic', icon: flutter, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'College/University', icon: shopify, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Professional Development Courses',  icon: reactjs, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Foreign Language',icon: laravel, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Test/Exam Prep', icon: angular, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
-        { title: 'Homework Help', icon: fullstack, desc: 'Drive your online business with robust capabilities of Shopify solutions.' },
+        { title: '1:1 Live Tutoring', icon: wordpress, desc: 'We provide customized 1:1 tutoring for all academic levels.' },
+        { title: 'Group Tutoring',  icon: python, desc: 'Our group session provides team support and is very engaging.' },
+        { title: '  k-12 Academic', icon: flutter, desc: 'Our Tutors are exceptionally skilled in all academic subjects.' },
+        { title: 'College/University', icon: shopify, desc: 'Higher Education courses can be difficult. However, we make the journey easier.' },
+        { title: 'Professional Development Courses',  icon: reactjs, desc: 'We provide career and professional courses to help your growth.' },
+        { title: 'Foreign Language',icon: laravel, desc: 'Our language Instructors find passion in sharing their knowledge.' },
+        { title: 'Test/Exam Prep', icon: angular, desc: 'Our expert tutors are a click away. They can prepare you for your next exam.' },
+        { title: 'Homework Help', icon: fullstack, desc: 'We know it can be difficult to understand a topic or subject. We can help you.' },
         ].map((item) => {
             return <div  onMouseDown={() => (setIsMouseDown(false))} onMouseOut={() => (setIsMouseDown(true))} key={item.title} className="card-container">
                 <div className="card">

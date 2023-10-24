@@ -83,11 +83,17 @@ const MegaMenu = ({ title = "GiveTitleName", data = [], navigateHandlerTitleRout
     }
 
     const handleNavigatorScrollSec=(item)=>{
-        navigate(`${item}`)
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
+        if(item=="homework"){
+            window.open("https://admin.mytutorroom.com/homework")
+        }
+        else{
+            navigate(`${item}`)
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+              });
+        }
+      
     }
    
 

@@ -6,6 +6,7 @@ import { ThemeProvider } from '@mui/material';
 import { theme } from './theme';
 import { MAIN_COLOR, SECONDARY_COLOR } from './constant';
 import './index.css'
+import './i18n';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

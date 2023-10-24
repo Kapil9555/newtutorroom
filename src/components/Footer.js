@@ -8,6 +8,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ArrowOutwardIcon from '@mui/icons-material/ArrowOutward';
 import { HOVER_COLOR, MAIN_COLOR } from '../constant';
 import { useNavigate } from 'react-router-dom';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 
 
 const Footer = () => {
@@ -29,7 +30,7 @@ const Footer = () => {
         return <Typography onClick={() => { navigate(`${item.path}`); window.scrollTo({ top: 0, left: 0, behavior: 'smooth' }) }} key={index} sx={{ transition: "all 0.30s ease", fontSize: '15px', fontWeight: "700", mt: "8px", borderBottom: '3px solid transparent', '&:hover': { opacity: 0.6, borderBottom: `3px solid ${HOVER_COLOR}`, cursor: 'pointer' } }}>{item.title}</Typography>
     })
 
-    const socialIcons = [{icon:<InstagramIcon color='primary'/>,id:1,link:"https://www.instagram.com/my_tutorroom/"}, {icon:<FacebookIcon color='primary'/>,id:2,link:"https://www.facebook.com/people/My-Tutor-Room/61551953380994/"}, {icon:<TwitterIcon color='primary'/>,id:3,link:"https://twitter.com/i/flow/login?redirect_after_login=%2FMy_tutorroom"}, {icon:<LinkedInIcon color='primary'/>,id:4,link:"https://www.linkedin.com/in/my-tutor-room-223626297/"}].map((item, index) => {
+    const socialIcons = [{icon:<InstagramIcon color='primary'/>,id:1,link:"https://www.instagram.com/my_tutorroom/"}, {icon:<FacebookIcon color='primary'/>,id:2,link:"https://www.facebook.com/people/My-Tutor-Room/61551953380994/"}, {icon:<TwitterIcon color='primary'/>,id:3,link:"https://twitter.com/i/flow/login?redirect_after_login=%2FMy_tutorroom"}, {icon:<LinkedInIcon color='primary'/>,id:4,link:"https://www.linkedin.com/in/my-tutor-room-223626297/"},{icon:<YouTubeIcon color="primary"/>,id:5,link:"https://www.youtube.com/channel/UCgRGjxrgHQBsonyOYG_vECg"}].map((item, index) => {
         return <Typography key={index} sx={{ color: MAIN_COLOR, }}>
             <a href={item.link} style={{textDecoration:"none"}}>{item.icon}</a>
         </Typography>

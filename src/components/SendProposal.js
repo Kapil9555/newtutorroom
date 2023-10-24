@@ -30,7 +30,7 @@ const SendProposal = () => {
                     Our platform and expert tutors can meet your learning needs!
                     </Typography>
                     <Grid item  sx={{ display: 'flex', justifyContent: 'center', mt: '30px' }}>
-                        <ProposalInput style={{ width: { md: '100%', lg: '80%', sm: '100%', xs: '100%' }, color: 'white' }} title={"Find a Tutor today"} button={"send"} />
+                        {/* <ProposalInput style={{ width: { md: '100%', lg: '80%', sm: '100%', xs: '100%' }, color: 'white' }} title={"Find a Tutor today"} button={"send"} /> */}
                     </Grid>
                 </Grid>
 

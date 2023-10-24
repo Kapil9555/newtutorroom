@@ -35,7 +35,7 @@ const BannerText = () => {
                 We believe that effective tutoring can help strengthen subject comprehension, boost confidence, and build important learning skills. Our tutoring program will help students with the skills they need to deal with the challenges at school and improve their critical thinking abilities. 
                 </Typography>
             </Grid>
-            <ProposalInput style={{ m: { lg: 1, xs: 3 }, width: { md: '70%', lg: '50%' }, color: 'white' }} title={"What would you like to learn?"} button={"search"}/>
+            {/* <ProposalInput style={{ m: { lg: 1, xs: 3 }, width: { md: '70%', lg: '50%' }, color: 'white' }} title={"What would you like to learn?"} button={"search"}/> */}
 
             <Grid container sx={{ mt:{xs:"20px",sm:"30px",md:"40px",lg:"60px"}, alignItems: 'flex-end', justifyContent: 'space-evenly',p:"10px",pb:"20px" }}>
                 <Grid item xs={2} lg={1.2} md={1.5} sm={1.5} data-aos="fade-right" onClick={goToHomePage} >

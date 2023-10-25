@@ -36,6 +36,14 @@ const Footer = () => {
         </Typography>
     })
 
+    const handleHomeNavigate =()=>{
+        navigate('/')
+        window.scroll({
+            top:0,
+            behavior:"smooth"
+        })
+    }
+    
     return (
         <>
             <Divider sx={{ border: `5px solid ${MAIN_COLOR}`, mb: '20px' }} />
@@ -69,8 +77,8 @@ const Footer = () => {
                 </Grid>
                 <Grid item xs={12} sm={12} md={6} lg={4} sx={{ display: "flex", justifyContent: "center", alignItems: 'center', flexDirection: 'column' }}>
                     <Box sx={{ width: "80%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-                        <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }}>
-                            <img src={adel} height="60px" width="65%" style={{ marginLeft: "-32px", }} alt='pic' />
+                        <Box sx={{ width: "100%", display: 'flex', justifyContent: 'center' }} >
+                            <img src={adel} height="60px" width="65%" style={{ marginLeft: "-32px",cursor:"pointer" }} alt='pic' onClick={handleHomeNavigate}/>
                         </Box>
                         <Box sx={{ display: "flex", mt: "40px", justifyContent: "space-between", width: "70%", alignItems: 'center' }}>
                             {socialIcons}

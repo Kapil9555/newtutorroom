@@ -5,7 +5,7 @@ import contactwall from '../assets/contactwall.jpg';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import SendMessage from '../components/SendMessage';
-import { MAIN_COLOR } from '../constant';
+import { MAIN_COLOR, MOBILE } from '../constant';
 import useBottomBar from '../utils/useBottomBar';
 import BottomNavBar from '../global/BottomNavBar';
 import AOS from 'aos';
@@ -58,7 +58,7 @@ const ContactUs = () => {
                                     <Typography variant='h5' sx={{ fontSize: { lg: '35px', md: '33px', sm: '30px', xs: '28px' }, color: '#01579b', fontWeight: '600' }}>Locate Us</Typography>
                                     <Typography variant='h2' sx={{ fontSize: '18px', fontWeight: '600' }}>San Antonio</Typography>
                                     <Typography sx={{ fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' }, mt: '5px', textAlign: 'center' }}>401 E Sonterra Blvd. Ste 375, <br />San Antonio, TX 78258, <br />info@mytutorroom.com</Typography>
-                                    <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />210-986-1774</Typography>
+                                    <Typography sx={{ display: 'flex', justifyContent: 'left', alignItems: 'center', fontSize: { lg: '19px', md: '19px', sm: '17px', xs: '16px' } }}><PhoneIphoneIcon fontSize='small' />{MOBILE}</Typography>
 
 
 
